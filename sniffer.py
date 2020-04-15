@@ -15,7 +15,7 @@ from scapy.all import *
 
 import pandas as pd
 
-packets=rdpcap('./web.pcap')
+packets=rdpcap('../data/web.pcap')
 
 print(len(packets))
 # print((packets[3]['TCP']).show())
@@ -63,4 +63,4 @@ for i in range(len(packets)):
 print(len(list_of_all_dictionaries))
 
 df=pd.DataFrame(list_of_all_dictionaries)
-df.to_csv('web_tcp_ip.csv')
+df.to_csv('../data/web_tcp_ip.csv')
