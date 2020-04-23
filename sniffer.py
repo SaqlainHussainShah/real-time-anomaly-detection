@@ -63,4 +63,4 @@ for i in range(len(packets)):
 print(len(list_of_all_dictionaries))
 
 df=pd.DataFrame(list_of_all_dictionaries)
-df.to_csv('../data/web_tcp_ip.csv')
+df.to_csv('../data/web.csv')
